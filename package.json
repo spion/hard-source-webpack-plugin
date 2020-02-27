@@ -1,7 +1,7 @@
 {
-  "name": "hard-source-webpack-plugin",
-  "version": "0.13.1",
-  "description": "Hard cache the source of modules in webpack.",
+  "name": "hard-source-webpack-plugin-fixed-hashbug",
+  "version": "0.13.2",
+  "description": "Hard cache the source of modules in webpack. Patched version fixing the hash bug",
   "keywords": [
     "webpack",
     "disk",
@@ -23,8 +23,8 @@
     "url": "https://github.com/mzgoddard/hard-source-webpack-plugin/issues"
   },
   "scripts": {
-    "commitmsg": "commitlint -e $GIT_PARAMS",
-    "commitlint-travis": "commitlint-travis",
+    "commitmsg": "echo 'skipping'",
+    "commitlint-travis": "echo 'skiping'",
     "lint": "prettier --list-different --single-quote --trailing-comma all {index.js,lib/*.js,lib/util/*.js,test/*.js,test/*/*.js,bin/*.js}",
     "lint:fix": "prettier --write --single-quote --trailing-comma all {index.js,lib/*.js,lib/util/*.js,test/*.js,test/*/*.js,bin/*.js}",
     "test": "NODE_ENV=test mocha tests/*.js"
